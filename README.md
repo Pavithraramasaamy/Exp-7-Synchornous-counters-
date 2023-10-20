@@ -1,4 +1,10 @@
-# Exp-6-Synchornous-counters - up counter and down counter 
+```
+Developed by: PAVITHRA R
+RegisterNumber:  212222230106
+
+```
+
+# Exp-6-Synchornous counters up counter and down counter 
 ### AIM: To implement 4 bit up and down counters and validate  functionality.
 ### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
 ### SOFTWARE REQUIRED:   Quartus prime
@@ -46,43 +52,94 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 4-bit Count Down Counter
 ### Procedure
-/* write all the steps invloved */
+/* 
 
+1.Set the input as clock.
+2.Register the output of 4 bit.
+3.Use Posedge on the input clock.
+4.For Up counter use AND and OR gates to declare the value of each bit.
+5.For Down counter use AND, OR and NOT gates to declare the value of each bit.
+6.End the module.
 
-
-### PROGRAM 
-/*
-Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
 */
 
 
 
+### PROGRAM 
+```
+/*
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
 
+UP COUNTER:
+
+module EXP6(clk,A);
+input clk;
+output reg [3:0]A;
+always@(posedge clk)
+begin
+A[3]=((A[2]&A[1])&A[0])^A[3];
+A[2]=(A[1]&A[0])^A[2];
+A[1]=(A[0]^A[1]);
+A[0]=1^A[0];
+end
+endmodule
+
+
+DOWN COUNTER:
+
+module d6(clk,A);
+input clk;
+output reg [3:0]A;
+always @(posedge clk)
+begin
+A[3]=((~A[2])&(~A[1])&(~A[0]))^A[3];
+A[2]=((~A[1])&(~A[0]))^A[2];
+A[1]=(~A[0])^A[1];
+A[0]=1^A[0];
+end
+endmodule
+
+*/
+
+
+
+```
 
 
 ### RTL LOGIC UP COUNTER AND DOWN COUNTER  
 
+## UP COUNTER:
 
+![rtl exp 6 up](https://github.com/Pavithraramasaamy/Exp-7-Synchornous-counters-/assets/118596964/08f8b9e8-207c-4b9f-9c1c-431591d1bcc3)
 
+## DOWN COUNTER:
 
-
-
+![rtl d6](https://github.com/Pavithraramasaamy/Exp-7-Synchornous-counters-/assets/118596964/58006ea3-08ef-4c96-99b3-aba93b449ad1)
 
 
 
 ### TIMING DIGRAMS FOR COUNTER  
 
+## UP COUNTER:
+
+![exp6 up waveform](https://github.com/Pavithraramasaamy/Exp-7-Synchornous-counters-/assets/118596964/2cc8c1ac-3f3d-4a1b-9db7-53240b96097f)
 
 
+## DOWN COUNTER:
 
+![d6 waveform](https://github.com/Pavithraramasaamy/Exp-7-Synchornous-counters-/assets/118596964/2151b019-f747-46f2-b5b6-c8517cc6cbba)
 
 ### TRUTH TABLE 
 
+## UP COUNTER:
+
+![image](https://github.com/Pavithraramasaamy/Exp-7-Synchornous-counters-/assets/118596964/d46f456c-9e4d-4b8c-9268-43e9a337da88)
 
 
+## DOWN COUNTER:
 
+![image](https://github.com/Pavithraramasaamy/Exp-7-Synchornous-counters-/assets/118596964/a80c6714-2212-4815-851b-0c663470fe71)
 
 
 ### RESULTS 
+Thus the program has been edxecuted successfully.
