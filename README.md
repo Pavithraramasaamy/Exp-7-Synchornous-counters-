@@ -137,16 +137,16 @@ endmodule
 
 ![d6 waveform](https://github.com/Pavithraramasaamy/Exp-7-Synchornous-counters-/assets/118596964/2151b019-f747-46f2-b5b6-c8517cc6cbba)
 
-### TRUTH TABLE 
+### STATE TABLE 
 
 ## UP COUNTER:
 
-![image](https://github.com/Pavithraramasaamy/Exp-7-Synchornous-counters-/assets/118596964/d46f456c-9e4d-4b8c-9268-43e9a337da88)
+![image](https://github.com/Pavithraramasaamy/Exp-7-Synchornous-counters-/assets/118596964/f3c12eb9-c778-451e-af6c-643d1ef6f6df)
 
 
 ## DOWN COUNTER:
 
-![image](https://github.com/Pavithraramasaamy/Exp-7-Synchornous-counters-/assets/118596964/a80c6714-2212-4815-851b-0c663470fe71)
+![image](https://github.com/Pavithraramasaamy/Exp-7-Synchornous-counters-/assets/118596964/973310f1-7a6c-444d-a4ec-93b63cc9e8b2)
 
 
 ### RESULTS 
